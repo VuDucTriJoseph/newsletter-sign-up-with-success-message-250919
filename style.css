@@ -9,9 +9,14 @@ body{
     align-items: center;
     justify-content: center;
     color: hsl(234, 29%, 20%);
+    background-color: hsl(234, 29%, 20%);
 }
 .card{
     width: 340px;
+    background-color: white;
+    border-radius: 1rem;
+    
+    
 }
 picture img{
     width: 100%;
@@ -29,11 +34,14 @@ picture img{
     
 }
 
-#card-subscribe #form{
+#card-subscribe #form {
     display: flex;
     flex-direction: column;
     gap:1rem;
     padding: 1rem;
+}
+#card-dismiss{
+    padding: 1.5rem;
 }
 h1, p{
     padding-left: 1rem;
@@ -56,10 +64,17 @@ button{
 button:hover{
     background-image: linear-gradient(to right, hsl(4, 66%, 64%),hsl(4, 100%, 67%));
 }
-
-#form label{
+#imealLable{
+    display: flex;
+    justify-content: space-between;
+}
+#imealLable label{
     font-weight: 600;
     font-size: 0.8rem;
+}
+#alert{
+    font-size: 0.8rem;
+    color: hsl(4, 100%, 67%);
 }
 #card-dismiss{
     display: grid;
@@ -68,6 +83,11 @@ button:hover{
 
 .hidden{
     display: none !important;
+}
+.alert-style{
+    border-color: hsl(4, 100%, 67%);
+    color: hsl(4, 100%, 67%) !important;
+    background-color: hsl(4, 86%, 81%) !important;
 }
 @media (min-width:541px) and (max-width:899px) {
     .card{
@@ -95,7 +115,8 @@ button:hover{
         gap: 1rem;
     }
     .card{
-    width: 920px;
+    width: 900px;
+    padding: 1rem;
     }
     picture {
     width: 50%;

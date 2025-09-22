@@ -50,10 +50,14 @@
           </li>
         </ul>
         <form id="form" novalidate>
+          <div id="imealLable">
           <label for="email">
             
             Email address
-          </label>
+              
+            </label>
+            <span id="alert" class="hidden">Valid email required</span>
+          </div> 
           <input type="email" id="email" name="email" placeholder="email@company.com" >
           
           <button>
@@ -75,7 +79,7 @@
         Thanks for subscribing!
       </h1>
       <p>
-        A confirmation email has been sent to <b>ash@loremcompany.com</b>. 
+        A confirmation email has been sent to <b id="guestEmail">ash@loremcompany.com</b>. 
         Please open it and click the button inside to confirm your subscription.
       </p>
     </div>    
