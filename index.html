@@ -20,52 +20,55 @@
   <script defer src="main.js"></script>
 </head>
 <body>
-  <div id="card-subscribe" class="card hidden">
+  <div id="card-subscribe" class="card ">
     
     <picture>
-      <source media="(max-width: 430px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
-      <source media="(min-width: 820px)" srcset="./assets/images/illustration-sign-up-desktop.svg" >
-      <img src="./assets/images/illustration-sign-up-tablet.svg" alt="icon picture">
+      <source media="(max-width: 541px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+      <source media="(min-width: 900px)" srcset="./assets/images/illustration-sign-up-desktop.svg" >
+      <img src="./assets/images/illustration-sign-up-tablet.svg" alt="icon picture" >
     </picture>
     
     <!-- Sign-up form start -->
-    <h1>
+     <div id="dt-ds">
       
-      Stay updated!
-    </h1>
-    <p>
-      Join 60,000+ product managers receiving monthly updates on:
-    </p>
-    <ul id="list">
-      <li>
-        Product discovery and building what matters
-      </li>
-      <li>
-        Measuring to ensure updates are a success
-      </li>
-      <li>
-        And much more!
-      </li>
-    </ul>
-    <form id="form">
-      <label for="email">
-        
-        Email address
-      </label>
-      <input type="email" id="email" name="email" placeholder="email@company.com" >
-      
-      <button>
-        
-        Subscribe to monthly newsletter
-      </button>
-    </form>
+       <h1>
+         
+         Stay updated!
+        </h1>
+        <p>
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul id="list">
+          <li>
+            Product discovery and building what matters
+          </li>
+          <li>
+            Measuring to ensure updates are a success
+          </li>
+          <li>
+            And much more!
+          </li>
+        </ul>
+        <form id="form" novalidate>
+          <label for="email">
+            
+            Email address
+          </label>
+          <input type="email" id="email" name="email" placeholder="email@company.com" >
+          
+          <button>
+            
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
   </div>
 
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-   <div id="card-dismiss" class="card">
-    <div>
+   <div id="card-dismiss" class="card hidden">
+    <div id="dis">
       
       <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
       <h1>
@@ -75,14 +78,14 @@
         A confirmation email has been sent to <b>ash@loremcompany.com</b>. 
         Please open it and click the button inside to confirm your subscription.
       </p>
-    </div>
+    </div>    
       <button id="btn-dismis">
         
         Dismiss message
       </button>
-    </div>
       
       <!-- Success message end -->
+    </div>
       
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

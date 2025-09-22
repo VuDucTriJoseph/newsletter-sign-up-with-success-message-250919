@@ -62,9 +62,65 @@ button:hover{
     font-size: 0.8rem;
 }
 #card-dismiss{
-    display: grid !important;
+    display: grid;
     grid-template-rows: 9fr 1fr;
 }
+
 .hidden{
-    display: none;
+    display: none !important;
 }
+@media (min-width:541px) and (max-width:899px) {
+    .card{
+        width: 540px;
+    }
+    #dt-ds h1{
+        font-size: 3rem;
+    }
+    #card-dismiss{
+        display: flex;
+        flex-direction: column;
+        gap:3rem;
+        width: 450px;
+    }
+    #dis h1{
+        font-size: 4rem;
+        
+    }
+    
+}
+@media (min-width:900px){
+    #card-subscribe{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1rem;
+    }
+    .card{
+    width: 920px;
+    }
+    picture {
+    width: 50%;
+    }
+    #dt-ds{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1rem;
+        /* align-items: center; */
+    justify-content: center;
+    }
+    #dt-ds h1{
+        font-size: 3.5rem;
+    }
+    #card-dismiss{
+        display: flex;
+        flex-direction: column;
+        gap:3rem;
+        width: 450px;
+    }
+    #dis h1{
+        font-size: 4rem;
+        
+    }
+}
+
+
